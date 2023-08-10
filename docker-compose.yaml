@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:15'
+    container_name: 'socks-store-postgres'
+    ports:
+      - "5431:5432"
+    environment:
+      - 'POSTGRES_USER=user'
+      - 'POSTGRES_PASSWORD=111111'
+      - 'POSTGRES_DB=store'
